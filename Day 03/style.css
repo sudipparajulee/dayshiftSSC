@@ -1,0 +1,15 @@
+.myparagraph{
+    color: green;
+    background-color: yellow;
+    text-align: right;
+}
+.text-yellow{
+    color: yellow;
+}
+
+.bg-blue{
+    background-color: blue;
+}
+.text-center{
+    text-align: center;
+}
