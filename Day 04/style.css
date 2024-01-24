@@ -1,0 +1,49 @@
+.mytext{
+    color: rgb(236, 233, 233);
+    background-color: blue; 
+}
+
+.myheading{
+    color: red;
+    background-color: yellow;
+}
+
+.text-blue{
+    color: blue;
+}
+
+.bg-red{
+    background-color: red;
+}
+
+.bg-yellow{
+    background-color: yellow;
+}
+
+.text-white{
+    color: white;
+}
+
+.mydiv{
+    color: lightgreen;
+    background-color: blue;
+    text-align: justify;
+    width: 500px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.google-link{
+    background-color: red;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.google-link:hover{
+    background-color: blue;
+    border-radius: 5px;
+}
