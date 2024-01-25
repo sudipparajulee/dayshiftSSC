@@ -1,0 +1,53 @@
+.service{
+    background-color: aliceblue;
+}
+
+.service1{
+    background-color: red;
+    color: white;
+    width: 30%;
+    padding: 5px;
+    border-radius: 8px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.service2{
+    background-color: blue;
+    color: white;
+    width: 30%;
+    padding: 5px;
+    border-radius: 8px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.service3{
+    background-color: green;
+    color: white;
+    width: 30%;
+    padding: 5px;
+    border-radius: 8px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.course-heading{
+    text-align: center;
+}
+
+.course1, .course2, .course3, .course4{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    width: 21%;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+    display: inline-block;
+    box-shadow: 2px 2px 5px rgb(140, 123, 123);
+}
+
+.course2{
+    background-color: yellow;
+}
