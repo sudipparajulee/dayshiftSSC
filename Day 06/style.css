@@ -1,0 +1,41 @@
+.services{
+    background-color: aliceblue;
+    display: flex;
+}
+
+.service{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.myflexdiv{
+    background-color: red;
+    color: white;
+    width: 700px;
+    height: 300px;
+    display: flex;
+    /* justify-content: center; */
+    /* justify-content: end; */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar img{
+    height: 60px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: red;
+    margin: 10px;
+}
