@@ -1,0 +1,39 @@
+body{
+    font-family: sans-serif;
+    background-color: rgb(161, 147, 147);
+}
+
+.news-section{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 50px 100px;
+    gap: 15px;
+}
+
+.news-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.news{
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+
+.news img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.pnews{
+    display: flex;
+    gap: 10px;
+    background-color: lightgrey;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.pnews img{
+    width: 100px;
+}
