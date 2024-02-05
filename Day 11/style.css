@@ -1,0 +1,19 @@
+.myheading{
+    color: blue;
+    background-color: green;
+}
+
+.services{
+    display: flex;
+    justify-content: start;
+    background-color: yellow;
+    align-items: center;
+}
+
+.service{
+    color: white;
+    background-color: blue;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+}
