@@ -1,0 +1,40 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.top-bar{
+    background-color: rgb(201, 139, 24);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+
+.social-links a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar img{
+    height: 70px;
+    background-color: white;
+}
+
+.navbar{
+    background-color: rgb(54, 54, 164);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    align-items: center;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.banner img{
+    width: 100%;
+}

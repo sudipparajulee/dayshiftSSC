@@ -1,0 +1,33 @@
+body{
+    font-family: sans-serif;
+}
+
+.contact-form{
+    width: 500px;
+    background-color: aliceblue;
+    margin: 50px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.contact-form input, .contact-form select{
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid lightblue;
+}
+
+.contact-form textarea{
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid lightblue;
+}
+
+.contact-form input[type="submit"]{
+    width: 40%;
+    background-color: blue;
+    color: white;
+}
