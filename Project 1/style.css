@@ -38,3 +38,64 @@ body{
 .banner img{
     width: 100%;
 }
+
+.notice{
+    display: flex;
+    background-color: rgb(201, 139, 24);
+    padding: 0 50px;
+    font-size: 20px;    
+}
+
+.notice p{
+    color: white;
+    margin: 0;
+    padding: 10px;
+    background-color: rgb(169, 115, 15);
+}
+
+.notice marquee{
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.upper-footer{
+    background-color: rgb(52, 50, 50);
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 60px;
+    gap: 20px;
+}
+
+.footer-info img{
+    background-color: white;
+}
+
+.footer-info p{
+    text-align: justify;
+}
+
+.footer-contact{
+    padding-left: 50px;
+}
+
+.footer-links a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 5px 0;  
+}
+
+.lower-footer{
+    background-color: rgb(29, 26, 26);
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 5px 50px;
+}
+
+.lower-footer a{
+    color: rgb(185, 189, 253);
+    text-decoration: none;
+}
