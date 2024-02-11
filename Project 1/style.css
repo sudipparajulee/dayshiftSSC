@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: sans-serif;
     margin: 0;
@@ -27,6 +31,8 @@ body{
     justify-content: space-between;
     padding: 0 50px;
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 
 .navbar a{
@@ -98,4 +104,47 @@ body{
 .lower-footer a{
     color: rgb(185, 189, 253);
     text-decoration: none;
+}
+
+.top{
+    background-color: blue;
+    border-radius: 10px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+.top a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.mydiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 50px 150px ;
+}
+
+.mydiv img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product{
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+}
+
+.discount{
+    background-color: blue;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    right: 15px;
 }
