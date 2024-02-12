@@ -33,6 +33,7 @@ body{
     align-items: center;
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 
 .navbar a{
@@ -137,6 +138,7 @@ body{
     border-radius: 10px;
     padding: 10px;
     position: relative;
+    z-index: 2;
 }
 
 .discount{
@@ -147,4 +149,36 @@ body{
     position: absolute;
     top: 0;
     right: 15px;
+}
+
+.popup{
+    position: fixed;
+    /* left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; */
+    inset: 0;
+    background-color: rgba(21, 0, 255, 0.556);
+    z-index: 999;
+    backdrop-filter: blur(10px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-container{
+    width: 40%;
+    position: relative;
+}
+
+.popup img{
+    width: 100%;
+}
+
+.popup-container i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 28px;
+    color: white;
 }
