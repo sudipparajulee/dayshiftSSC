@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Javascript</title>
+    </head>
+    <body>
+        <h1 id="myheading">Hello</h1>
+        <script>
+            var currenttext = document.getElementById('myheading').innerHTML;
+            alert(currenttext);
+            document.getElementById('myheading').innerHTML = "Welcome to Javascript";
+            document.write("BCA 7th Sem");
+            console.log('This is a console message');
+
+            var a = 10;
+            var b = 20.5;
+            var c = a + b;
+            console.log("The sum of a and b is: " + c);
+
+            var d = "Hello";
+            var e = "World";
+            var f = d + " " + e;
+            console.log(f);
+
+            // alert("This is an alert message");
+
+            function myFunction(){
+                document.write("This is a function");
+            }
+
+            myFunction();
+
+            function name(i){
+                document.write("<br>");
+                document.write("Hello " + i);
+            }
+
+            name("Ram");
+
+            function sum(a,b){
+                var c = a + b;
+                return c;
+            }
+
+            var result = sum(10,20);
+            console.log(result);
+        </script>
+    </body>
+</html>
