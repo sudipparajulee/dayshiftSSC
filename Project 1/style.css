@@ -182,3 +182,49 @@ body{
     font-size: 28px;
     color: white;
 }
+
+@media screen and (max-width:1024px) {
+    .navbar{
+        display: grid;
+    }
+
+    .navbar a{
+        display: block;
+    }
+
+    .upper-footer{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .mydiv{
+        grid-template-columns: 1fr 1fr;
+        padding: 50px 100px ;
+    }
+}
+
+@media screen and (max-width:768px){
+    .upper-footer{
+        grid-template-columns: 1fr;
+        padding: 60px 20px;
+    }
+
+    .footer-contact{
+        padding: 0;
+    }
+
+    .lower-footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mydiv{
+        padding: 50px ;
+    }
+}
+
+@media screen and (max-width:614px){
+    .mydiv{
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+}
