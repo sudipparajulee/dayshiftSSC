@@ -9,6 +9,12 @@
     href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
     rel="stylesheet"
 />
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
     <div class="flex justify-between py-2 px-14 bg-amber-500 text-white">
@@ -31,13 +37,40 @@
             <a class="p-4" href="">Packages</a>
             <a class="p-4" href="">Blog</a>
             <a class="p-4" href="">Gallery</a>
-            <a class="p-4" href="">Contact</a>
+            <a class="p-4" href="contact.html">Contact</a>
         </div>
     </nav>
 
-    <div>
-        <img src="https://mmatnepal.com/public/trekkings/Fx0AmCdzWuO84b2z79Nd.jpg" class="w-full" alt="">
+    <!-- Slider main container -->
+<div class="swiper swiper1">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <div>
+            <img src="https://mmatnepal.com/public/trekkings/Fx0AmCdzWuO84b2z79Nd.jpg" class="w-full" alt="">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div>
+            <img src="https://mmatnepal.com/public/trekkings/Fx0AmCdzWuO84b2z79Nd.jpg" class="w-full" alt="">
+        </div>
+      </div>
     </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+
+
+
+    
 
     <div class="flex bg-amber-500 px-14 items-center">
         <p class="p-4 bg-amber-600 text-white">Notices</p>
@@ -49,19 +82,49 @@
         <h2 class="text-center text-3xl font-bold">Our Services</h2>
         <p class="text-center text-gray-600">Here are our services</p>
 
-        <div class="grid grid-cols-3 gap-10 px-14 mt-5">
-            <div>
-                <img src="https://mmatnepal.com/public/packages/uYI3dDMI3DOxe1YoiY8X.jpg" alt="">
-            </div>
+        <div class="swiper swiper2">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div>
+                    <img src="https://mmatnepal.com/public/trekkings/Fx0AmCdzWuO84b2z79Nd.jpg" class="w-full" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                    <img src="https://mmatnepal.com/public/trekkings/Fx0AmCdzWuO84b2z79Nd.jpg" class="w-full" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                    <img src="https://mmatnepal.com/public/trekkings/Fx0AmCdzWuO84b2z79Nd.jpg" class="w-full" alt="">
+                </div>
+              </div>
 
-            <div>
-                <img src="https://mmatnepal.com/public/packages/uYI3dDMI3DOxe1YoiY8X.jpg" alt="">
-            </div>
+              <div class="swiper-slide">
+                <div>
+                    <img src="https://mmatnepal.com/public/trekkings/Fx0AmCdzWuO84b2z79Nd.jpg" class="w-full" alt="">
+                </div>
+              </div>
 
-            <div>
-                <img src="https://mmatnepal.com/public/packages/uYI3dDMI3DOxe1YoiY8X.jpg" alt="">
+              <div class="swiper-slide">
+                <div>
+                    <img src="https://mmatnepal.com/public/trekkings/Fx0AmCdzWuO84b2z79Nd.jpg" class="w-full" alt="">
+                </div>
+              </div>
             </div>
-        </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+        
     </div>
     <!-- End of Services -->
 
@@ -262,5 +325,61 @@
         </div>
     </footer>
 
+
+    <script>
+        const swiper = new Swiper('.swiper1', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  autoplay: {
+      delay: 3000,
+  },
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+    </script>
+
+<script>
+    const swiper2 = new Swiper('.swiper2', {
+// Optional parameters
+direction: 'horizontal',
+loop: true,
+autoplay: {
+  delay: 3000,
+},
+slidesPerView: 3,
+spaceBetween: 30,
+
+// If we need pagination
+pagination: {
+el: '.swiper-pagination',
+},
+
+// Navigation arrows
+navigation: {
+nextEl: '.swiper-button-next',
+prevEl: '.swiper-button-prev',
+},
+
+// And if we need scrollbar
+scrollbar: {
+el: '.swiper-scrollbar',
+},
+});
+</script>
 </body>
 </html>
