@@ -36,7 +36,7 @@
             <a class="p-4" href="flights.html">Flights</a>
             <a class="p-4" href="">Packages</a>
             <a class="p-4" href="">Blog</a>
-            <a class="p-4" href="">Gallery</a>
+            <a class="p-4" href="gallery.html">Gallery</a>
             <a class="p-4" href="contact.html">Contact</a>
         </div>
     </nav>
@@ -74,7 +74,7 @@
 
     <div class="flex bg-amber-500 px-14 items-center">
         <p class="p-4 bg-amber-600 text-white">Notices</p>
-        <marquee class="text-white font-bold">This is a notice</marquee>
+        <marquee onmouseover="this.stop()" onmouseout="this.start()" class="text-white font-bold">This is a notice</marquee>
     </div>
 
     <!-- Start of Services -->
@@ -174,7 +174,7 @@
     </div>
     <!-- End of Packages -->
 
-    <div class="grid grid-cols-4 gap-10 px-14 py-10">
+    <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-10 px-14 py-10">
         <div class="p-5 text-center">
             <i class="ri-car-fill text-7xl text-amber-500"></i>
             <h2 class="font-bold text-3xl">Comfortable Journey</h2>
@@ -202,7 +202,7 @@
 
 
     <!-- Start of Flights  -->
-    <div class="py-10 bg-gray-100 grid grid-cols-2 gap-10 px-14">
+    <div class="py-10 bg-gray-100 grid md:grid-cols-2 gap-10 px-14">
         <div>
             <h2 class="text-blue-700 font-bold text-3xl text-center">Top <span class="text-amber-500">Domestic</span> Flights</h2>
             <p class="font-bold text-center text-gray-700">List of Domestic Flights</p>
@@ -259,7 +259,7 @@
         <h2 class="text-center text-3xl font-bold">Our Trekkings</h2>
         <p class="text-center text-gray-600">Explore different places with our wonderful trekking packages.</p>
 
-        <div class="grid grid-cols-3 gap-10 p-14">
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-10 p-14">
             <div class="bg-white hover:-translate-y-5 duration-300 cursor-pointer shadow-lg rounded-lg">
                 <img src="https://mmatnepal.com/public/packages/VbSBYex4qLjU48HITyxb.jpg" class="rounded-t-lg h-72 object-cover w-full" alt="">
                 <div class="flex justify-between items-center py-4 px-2">
@@ -294,7 +294,7 @@
     <!-- End of Trekking -->
 
     <footer class="pt-10">
-        <div class="bg-blue-700 text-white px-14 py-8 grid grid-cols-3 gap-10">
+        <div class="bg-blue-700 text-white px-14 py-8 grid md:grid-cols-3 gap-10">
             <div>
                 <h2 class="text-2xl font-bold">Contact Us</h2>
                 <p class="font-bold text-xl">Magestic Mountain Adventure & Tours</p>
@@ -314,7 +314,7 @@
                 <img src="https://mmatnepal.com/images/footer-image.jpeg" alt="">
             </div>
         </div>
-        <div class="px-14 py-4 bg-blue-900 text-gray-200 flex justify-between items-center">
+        <div class="px-14 py-4 bg-blue-900 text-gray-200 flex md:flex-row flex-col justify-between items-center">
             <p> &copy; 2024 All Right Reserved | MMAT NEPAL | Designed and Developed By BITS</p>
             <div class="flex items-center">
                 We accept:  

@@ -9,6 +9,12 @@
     href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
     rel="stylesheet"
 />
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+/>
 </head>
 <body>
     <div class="flex justify-between py-2 px-14 bg-amber-500 text-white">
@@ -35,23 +41,24 @@
         </div>
     </nav>
 
-    <div class="bg-[url('https://mmatnepal.com/public/flights/B2AMQhy8tvBwfw3g8PoD.jpg')] h-72 bg-cover bg-center relative">
-        <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center">
-            <h1 class="text-7xl text-white">About Us</h1>
-        </div>
+
+
+    <h1 class="text-center font-bold text-4xl my-5">Our Gallery</h1>
+
+    <div class="grid grid-cols-3 gap-10 px-14">
+        <a data-fancybox="gallery"
+        data-src="https://lipsum.app/id/2/1600x1200">
+        <img src="https://lipsum.app/id/2/200x150" class="w-full" />
+        </a>
+
+        <a data-fancybox="gallery" data-src="https://lipsum.app/id/3/1600x1200">
+        <img src="https://lipsum.app/id/3/200x150" width="200" height="150" alt="" class="w-full" />
+        </a>
+
+        <a data-fancybox="gallery" data-src="https://lipsum.app/id/4/1600x1200">
+        <img src="https://lipsum.app/id/4/200x150" width="200" height="150" alt="" class="w-full" />
+        </a>
     </div>
-
-
-    <p>Why Us</p>
-    <hr class="h-0.5 bg-amber-400">
-
-
-
-
-
-
-
-
 
 
 
@@ -90,5 +97,8 @@
         </div>
     </footer>
 
+    <script>
+        Fancybox.bind();
+    </script>
 </body>
 </html>
