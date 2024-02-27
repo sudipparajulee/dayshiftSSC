@@ -28,7 +28,7 @@
             <i class="ri-mail-fill"></i> info@mmatnepal.com
         </div>
     </div>
-    <nav class="bg-blue-900 flex items-center justify-between px-14 sticky top-0 z-10">
+    <nav class="bg-blue-900 lg:flex hidden items-center justify-between px-14 sticky top-0 z-10">
         <img src="https://mmatnepal.com/images/logo.png" class="h-20 bg-white" alt="">
         <div class="text-white font-bold">
             <a class="p-4" href="index.html">Home</a>
@@ -38,6 +38,22 @@
             <a class="p-4" href="">Blog</a>
             <a class="p-4" href="gallery.html">Gallery</a>
             <a class="p-4" href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <nav class="bg-blue-900 px-4 block lg:hidden sticky top-0 z-10">
+        <div class="flex justify-between items-center">
+            <img src="https://mmatnepal.com/images/logo.png" class="h-20 bg-white" alt="">
+            <i onclick="controlNav()" class="ri-menu-line text-3xl text-white"></i>
+        </div>
+        <div id="menu" class="text-white font-bold hidden">
+            <a class="p-4 block" href="index.html">Home</a>
+            <a class="p-4 block" href="about.html">About Us</a>
+            <a class="p-4 block" href="flights.html">Flights</a>
+            <a class="p-4 block" href="">Packages</a>
+            <a class="p-4 block" href="">Blog</a>
+            <a class="p-4 block" href="gallery.html">Gallery</a>
+            <a class="p-4 block" href="contact.html">Contact</a>
         </div>
     </nav>
 
@@ -384,6 +400,22 @@ scrollbar: {
 el: '.swiper-scrollbar',
 },
 });
+</script>
+
+
+<script>
+    function controlNav()
+    {
+        var menu = document.getElementById('menu');
+        if(menu.style.display == 'block')
+        {
+            menu.style.display = 'none';
+        }
+        else
+        {
+            menu.style.display = 'block';
+        }
+    }
 </script>
 </body>
 </html>
