@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="w-6/12 rounded-lg bg-gray-100 p-4 mx-auto text-center my-20">
+        <h2 class="text-2xl font-bold">Simple Interest Calculator</h2>
+        <input type="text" id="pricipal" class="w-full border-2 rounded-lg p-2 my-2" placeholder="Enter Principal">
+        <input type="text" id="rate" class="w-full border-2 rounded-lg p-2 my-2" placeholder="Enter Rate">
+        <input type="text" id="time" class="w-full border-2 rounded-lg p-2 my-2" placeholder="Enter Time" onkeyup="calculate()">
+        <!-- <button class="bg-blue-500 text-white p-2 rounded-lg w-1/2 my-2" onclick="calculate()">Calculate</button> -->
+        <h2 class="text-2xl font-bold" id="result"></h2>
+    </div>
+
+    <script>
+        function calculate(){
+            var p = document.getElementById('pricipal').value;
+            var r = document.getElementById('rate').value;
+            var t = document.getElementById('time').value;
+            if(t == '' || t == 0){
+                document.getElementById('result').innerHTML = '';
+                return;
+            }
+            if(p == '' || r == '' || t == ''){
+                alert('Please fill all the fields');
+                return;
+            }
+            if(isNaN(p) || isNaN(r) || isNaN(t)){
+                alert('Please enter a valid number');
+                return;
+            }
+            var si = (p * r * t) / 100;
+            document.getElementById('result').innerHTML = 'Simple Interest: ' + si;
+        }
+    </script>
+</body>
+</html>
