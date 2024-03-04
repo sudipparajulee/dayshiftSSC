@@ -10,17 +10,20 @@
     <div class="w-3/12 mx-auto my-10 p-4 bg-gray-100 rounded-lg shadow text-center">
         <h2 class="text-2xl font-semibold">Temperature Conversion</h2>
         <div class="flex items-center mt-5">
-            <input type="text" id="tempf" class="p-2 rounded-lg border-2" onkeyup="functionf()">
+            <input type="text" id="tempf" class="p-2 w-10/12 rounded-lg border-2" onkeyup="functionf()">
             <p><sup>o</sup>F</p>
         </div>
         <p class="text-xs text-red-600" id="errorf"></p>
         <div class="flex items-center my-4">
-            <input type="text" id="tempc" class="p-2 rounded-lg border-2" onkeyup="functionc()">
+            <input type="text" id="tempc" class="p-2 w-10/12 rounded-lg border-2" onkeyup="functionc()">
             <p><sup>o</sup>C</p>
         </div>
         <p class="text-xs text-red-600" id="errorc"></p>
     </div>
 
+    <iframe src="https://www.hamropatro.com/widgets/calender-medium.php" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" style="border:none; overflow:hidden; width:295px; height:385px;" allowtransparency="true"></iframe>
+
+    <iframe src="https://calendar-nepali.com/clockwidget/nepali-clock-widget-blue-vertical.php" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" style="border:none; overflow:hidden; width:120px; height:267px;" allowtransparency="true"></iframe>
     <script>
         function functionf(){
             var tempf = document.getElementById('tempf').value;
@@ -29,9 +32,29 @@
                 errorf.innerHTML = "Please enter a valid number";
                 return;
             }
+            if(tempf == ""){
+                document.getElementById('tempc').value = "";
+                return;
+            }
             errorf.innerHTML = "";
             var tempc = (tempf - 32) * 5/9;
             document.getElementById('tempc').value = tempc.toFixed(2);
+        }
+
+        function functionc(){
+            var tempc = document.getElementById('tempc').value;
+            var errorc = document.getElementById('errorc');
+            if(isNaN(tempc)){
+                errorc.innerHTML = "Please enter a valid number";
+                return;
+            }
+            if(tempc == ""){
+                document.getElementById('tempf').value = "";
+                return;
+            }
+            errorc.innerHTML = "";
+            var tempf = (tempc * 9/5) + 32;
+            document.getElementById('tempf').value = tempf.toFixed(2);
         }
     </script>
 </body>
